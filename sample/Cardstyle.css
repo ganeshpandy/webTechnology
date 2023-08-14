@@ -1,0 +1,102 @@
+
+.card{
+    width: 840px;
+    margin: auto;
+    display: block;
+    margin-top: 10%;
+}
+
+.contener{
+    float: left;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 240px;
+    height: 320px;
+    overflow: hidden;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 black;
+    transition: all 0.3s;
+
+}
+
+.contener:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 11px 14px rgb(0 0 0 / 25%),0 8px 20px rgb(0 0 0 / 10%);
+}
+
+.img-contener{
+    display: block;
+    width: 100%;
+    height: 140px;
+    overflow: hidden;
+}
+
+.img-contener img{
+    width: 100%;
+}
+
+.img-contener .oldprice{
+    color: red;
+    position: absolute;
+    top: 170px;
+    left: 210px;
+    text-decoration: line-through;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.img-contener .actualprice{
+    color: rgb(255, 3, 192);
+    position: absolute;
+    top: 190px;
+    left: 210px;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.mete-contener{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 110px;
+    padding: 10 px 20px ;
+
+}
+
+.mete-contener .title{
+    padding: 0;
+    margin: 10px 0;
+    font-size: 22px;
+    color: red;
+}
+
+.mete-contener .desc{
+    font-size: 13px;
+    text-align: center;
+    color: violet;
+}
+
+.Highlight-contener{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    text-align: center;
+    height: 40px;
+
+}
+
+.Highlight-contener .span1{
+    border: 0.5px solid white;
+    color: black;
+    float: none;
+    display: flex;
+    margin-right:3px;
+    position: relative;
+    right: 18px;
+}
+
+
+

@@ -1,0 +1,181 @@
+/// signup
+function signup() {
+    let User = document.getElementById("user_name").value;
+    let Gmail = document.getElementById("mail").value;
+    let Number = document.getElementById("num").value;
+    let Pass = document.getElementById("pass").value;
+    let Confirm = document.getElementById("confirm").value;
+    let b1 = false;
+    let b2 = false;
+    let b3 = false;
+    let b4 = false;
+    let b5 = false;
+
+    /// User Name
+    if ((User.length >= 8) && (User.length <= 16)) {
+        let upper = 0;
+        let lower = 0;
+        let number = 0;
+        let special = 0;
+
+        for (let i = 0; i < User.length; i++) {
+            if ((User[i] >= 'A') && (User[i] <= 'Z')) {
+                upper++;
+            } else if ((User[i] >= 'a') && (User[i] <= 'z')) {
+                lower++;
+            } else if ((User[i] >= '0') && (User[i] <= '9')) {
+                number++;
+
+            } else {
+                special++;
+            }
+
+        }
+        if ((upper >= 1) && (lower >= 1) && (number >= 1) && (special >= 1)) {
+            b1 = true;
+
+        } else {
+            document.getElementById("para").innerHTML = "*Please Enter Strong UserName!!!";
+
+        }
+
+    }
+    else {
+        document.getElementById("para").innerHTML = "*Please Enter Strong UserName!!!";
+    }
+
+    // Email Id
+
+    if ((Gmail.length >= 8) && (Gmail.length <= 25)) {
+        let lower = 0;
+        let symbol = 0;
+        let symbol1 = 0;
+        let number = 0;
+
+        for (let i = 0; i <= Gmail.length; i++) {
+            if ((Gmail[i] >= 'a') && (Gmail[i] <= 'z')) {
+                lower++;
+            }
+            else if ((Gmail[i] == '@')) {
+                symbol++;
+            }
+            else if ((Gmail[i] == '.')) {
+                symbol1++;
+            }
+
+            else if ((Gmail[i] >= '0') && (Gmail[i] <= '9')) {
+                number++;
+
+            }
+        }
+
+        if ((lower >= 1) && (symbol == 1) && (number >= 1) && (symbol1 == 1)) {
+            b2 = true;
+
+        }
+        else {
+            alert("Not Valid Gmail. Please Enter Valid Gmail!!!");
+        }
+    }
+
+    else {
+        alert("Not Valid Gmail. Please Enter Valid Gmail!!!");
+
+    }
+    ///Mobile Number
+
+    if ((Number.length == 10) && (Number[0] >= 6) && (Number[0] <= 9)) {
+
+        b3 = true;
+
+    }
+    else {
+        alert("Invalid Indain Mobile Number");
+    }
+
+
+
+    // Password
+
+    if ((Pass.length >= 8) && (Pass.length <= 16)) {
+        let upper = 0;
+        let lower = 0;
+        let number = 0;
+        let special = 0;
+
+        for (let i = 0; i < Pass.length; i++) {
+            if ((Pass[i] >= 'A') && (Pass[i] <= 'Z')) {
+                upper++;
+            } else if ((Pass[i] >= 'a') && (Pass[i] <= 'z')) {
+                lower++;
+            } else if ((Pass[i] >= '0') && (Pass[i] <= '9')) {
+                number++;
+
+            } else {
+                special++;
+            }
+
+        }
+        if ((upper >= 1) && (lower >= 1) && (number >= 1) && (special >= 1)) {
+
+            b4 = true;
+
+        } else {
+            alert("Not A Strong  Password Please Enter Strong Password!!!");
+
+        }
+
+    }
+    else {
+        alert("Not A Strong  Password Please Enter Strong Password!!!");
+    }
+
+    /// Confirm Password
+    if ((Confirm.length >= 8) && (Confirm.length <= 16)) {
+        let upper = 0;
+        let lower = 0;
+        let number = 0;
+        let special = 0;
+
+        for (let i = 0; i < Confirm.length; i++) {
+            if ((Confirm[i] >= 'A') && (Confirm[i] <= 'Z')) {
+                upper++;
+            } else if ((Confirm[i] >= 'a') && (Confirm[i] <= 'z')) {
+                lower++;
+            } else if ((Confirm[i] >= '0') && (Confirm[i] <= '9')) {
+                number++;
+
+            } else {
+                special++;
+            }
+
+        }
+        if ((upper >= 1) && (lower >= 1) && (number >= 1) && (special >= 1)) {
+
+            if (Pass == Confirm) {
+                b5 = true;
+
+            }
+            else {
+                alert("Password Is Not Match")
+
+            }
+
+        } else {
+            alert("Not A Strong  Password Please Enter Strong Password!!!");
+        }
+
+    }
+    else {
+        alert("Not A Strong  Password Please Enter Strong Password!!!");
+    }
+    if ((b1 == true) && (b2 == true) && (b3 == true) && (b4 == true) && (b5 == true)) {
+        window.location.href = "./Travel.html";
+
+    }
+    else {
+        alert("Incorrect Values");
+    }
+
+}
+

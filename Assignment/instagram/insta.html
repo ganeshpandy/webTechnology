@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+    }
+    body{
+        background-image: linear-gradient(to right,rgb(240, 95, 184),rgb(225, 104, 23), yellow,orange);
+    }
+    #container{
+        background-color: aliceblue;
+        margin-top: 5px;
+        border: 1px solid white;
+        width: 400px;
+        text-align: center;
+        display: inline-block;
+        padding: 5px;
+        }
+        #insta{
+            font-family:cursive;
+            font-size: xx-large;
+        }
+        input{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        #login{
+            background-color:#3897f0;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            height: 30px;
+            width: 100px;
+        }
+        #conlogfb,#logfb{
+            display: inline-flex;
+        }
+        #fb{
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;
+        }
+        #logfb,p{
+            margin-top: 5px;
+            color:blue;
+        }
+        #account{
+            background-color: aliceblue;
+            margin-top: 5px;
+            border:2px black solid;
+            width: 400px;
+            padding: 5px;
+            border: 1px solid white;
+        }
+        img{
+            width:300px;
+        }
+    .or{
+	display: flex;
+	align-items: center;
+    background-color: red;
+	height: 15px;
+	margin: 15px 0 20px;
+}
+
+.line{
+    margin: 60px;
+	width: 195px;
+	height: 0px;
+	border: 1px solid black;
+}
+</style>
+<body><center>
+<div id="container">
+    <img src="./insta.png" alt="">
+    <input type="text"placeholder="Phone number,username, or email"><br>
+    <input type="text"placeholder="Password"><br>
+    <button id="login">Log in</button><br>
+    <div class="or">
+        <div class="line"></div>
+        OR
+        <div class="line"></div>
+    </div>
+    
+<div id="conlogfb"><div id="logfb"><img src="./fb.png" alt=""id="fb">&nbsp;&nbsp;&nbsp;
+    <p>Log in with facebook</p></div></div>
+<p style="color: rgb(80, 80, 246);">Forget password?</p>
+</div></center>
+<center>
+    <div id="account">Don't Have an account?<a href="./signup.html"style="color:blue;">Signup</a></div>
+</center>
+</body>
+</html>

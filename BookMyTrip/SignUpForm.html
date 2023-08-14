@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #wrapper {
+        justify-content: center;
+    }
+
+    #container {
+        background-color: aliceblue;
+        width: 25%;
+        text-align: center;
+        padding: 30px;
+        margin: 100px auto;
+    }
+
+    #txt-field {
+        width: 100px;
+    }
+
+    .margin-space {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        display: flex;
+        align-items: center;
+        text-align: start;
+    }
+
+    .text-start {
+        text-align: start;
+    }
+
+    .btn-margin {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 8px;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+
+    .margin-space2 {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    body {
+        background-image: linear-gradient(to right, rgba(17, 4, 45, 0.777), rgb(21, 148, 217), rgb(83, 9, 163));
+    }
+
+    a {
+        text-decoration: none;
+        cursor: pointer;
+        
+    }
+</style>
+
+<body>
+    <form>
+    <div id="wrapper">
+        <div id="container">
+            <div id="txt-box">
+                <h1 class="text-start">SignUpForm</h1>
+                <hr>
+                <div class="margin-space">
+                    <label id="txt-field">UserName</label>
+                    <input type="text" id="username" required>
+                </div>
+                <span id="uerror"></span>
+
+
+                <div class="margin-space">
+                    <label id="txt-field">EmailId</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <span id="eerror"></span>
+
+
+                <div class="margin-space">
+                    <label id="txt-field">Password</label>
+                    <input type="text" name="password" id="password" required>
+                </div>
+                <span id="perror"></span>
+
+
+                <div class="margin-space">
+                    <label id="txt-field">Confirm Password</label>
+                    <input type="text" name="conpassword" id="conpassword" required>
+                </div>
+                <span id="cperror"></span>
+
+                <div class="margin-space2">
+                    <button type="submit" class="btn-margin" onclick="SignUp()"><a href="./Login.html">submit</a></button>
+                    <button type="reset" class="btn-margin">reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+<!-- <script>
+function SignUp() {
+
+        let username = document.getElementById("username").value;
+        let email = document.getElementById("email").value;
+        let password = document.getElementById("password").value;
+        let conpassword = document.getElementById("conpassword").value;
+
+    let usernameval=false;
+    let emailval=false;
+    let passwordval=false;
+    let conpasswordval=false;
+
+    if ((username == '')&&(password=='')&&(email=='')&&(conpassword=='')) {
+        
+        alert("Please Enter All the Details");
+    }
+    else{
+        console.log('logged');
+    }
+    if(password==conpassword) {
+        window.location.href = "Login.html";
+        }
+    else{
+    alert("Password must be same");    
+    }
+    }
+
+</script> -->
+
+</html>

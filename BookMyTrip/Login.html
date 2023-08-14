@@ -1,0 +1,144 @@
+<!-- click ctrl+/ for comment line -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <!-- <link rel="stylesheet" href="style.css"> -->
+
+</head>
+<style>
+   * {
+      margin: 0;
+      padding: 0;
+   }
+
+   #wrapper {
+      justify-content: start;
+   }
+
+   #container {
+      background-color: aliceblue;
+      width: 25%;
+      padding: 30px;
+      margin-top: 150px;
+      margin-left: 10px;
+      border-radius: 25px;
+   }
+
+   body {
+      background-image: url(./images/bookmytrip.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+   }
+
+   .text-start {
+      text-align: center;
+   }
+
+   .margin-space {
+      margin-top: 25px;
+      margin-bottom: 25px;
+      display: flex;
+      align-items: center;
+   }
+
+   .mb-0 {
+      margin-bottom: 0;
+   }
+
+   #txt-field {
+      width: 100px;
+      font-size: 18px;
+   }
+
+   button {
+      font-size: larger;
+      background-color: aqua;
+      width: 120px;
+      height: 30px;
+      border-radius: 50px;
+      margin-left: 100px;
+      cursor: pointer;
+   }
+
+   .margin-space2 {
+      margin-top: 20px;
+      text-align: center;
+      font-size: larger;
+   }
+
+   button:hover {
+      background-color: rgb(54, 111, 245);
+
+   }
+
+   a {
+      text-decoration: none;
+   }
+</style>
+
+<body>
+ 
+      <div id="wrapper">
+         <div id="container">
+
+            <div id="margin-space">
+               <h1 class="text-start">LOGIN</h1>
+               <hr>
+            </div>
+
+            <div class="margin-space mb-0">
+               <label id="txt-field">UserName:</label>
+               <input type="text" required placeholder="enter your name" id="username" name="username">
+            </div>
+            <div>
+               <span id="error"></span>
+            </div>
+
+            <div class="margin-space">
+               <label id="txt-field">Password:</label>
+               <input type="password" required placeholder="enter your pwd" id="password" name="password">
+            </div>
+            <div>
+               <span id="error"></span>
+            </div>
+
+            <div id="btn">
+               <button type="submit" onclick="login()">Login</button>
+            </div>
+            
+            <div class="margin-space2">Not a member?
+               <a href="./SignUpForm.html">Signup</a>
+            </div>
+         </div>
+      </div>
+
+</body>
+<script>
+
+   function login() {
+
+      let error = document.getElementById("error")
+      let username = document.getElementById('username').value;
+      let password = document.getElementById('password').value;
+
+      if (username == 'alex' && password == '123') {
+         window.location.href = "ModeOfTravel.html";
+         // alert('logeed in')
+         
+      }
+      else {
+         error.textContent = "invalid username"
+         error.style.color = "red"
+         // e.prevent.default;
+      }
+   }
+
+</script>
+
+</html>

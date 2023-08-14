@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding: 0;
+    }
+    body{
+    background-image: url(./images/FlightBooking.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    }
+    #container{
+      background-color: aliceblue;
+      width: 30%;
+      text-align: center;
+      margin-top: 140px;
+      margin-left: 450px;
+      border-radius: 20px;
+}
+    .margin-space {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        display: flex;
+    }
+#head{
+    font-family:Georgia, serif;
+    border-bottom:1px solid;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+#txt-field {
+    width: 200px;
+    font-size: 18px;
+    }
+        #button{
+        color: aliceblue;
+        font-size: larger;
+        background-color: #4DB5F9;
+        width: 100px;
+        height: 30px;
+        border-radius:10px;
+        margin-bottom: 10px;
+            }
+a{text-decoration: none;
+color: aliceblue;
+}
+.btn{
+    display:inline;
+    text-align: center;
+}
+.radio{margin-left: 20px;}
+</style>
+
+<body>
+    <div id="wrapper">
+        <div id="container">
+            <div id="head">
+                <form action="#">
+                <h2>FLIGHT TICKET BOOKING</h2>
+            </div>
+            <div class="margin-space">
+                <label id="txt-field">Name:</label>
+                <input type="text">
+            </div>
+            <div class="margin-space">
+                <label id="txt-field">From:</label>
+                <input type="text">
+            </div>
+            <div class="margin-space">
+                <label id="txt-field">To:</label>
+                <input type="text">
+            </div>
+            <div class="margin-space">
+                <label id="txt-field">Gender:</label>
+                <div class="radio"><input type="radio"name="gender">Male</div>
+                <div class="radio"><input type="radio"name="gender">Female</div>
+            </div>
+            <div class="margin-space">
+                <label id="txt-field">No.of.Passengers:</label>
+                <input type="number">
+            </div>
+            <div class="margin-space">
+                <label id="txt-field">Amount:</label>
+                <input type="number">
+            </div>
+            <div class="btn"><button id="button"><a href="PassengerDetails.html">Confirm</a></button>
+                <input type="reset"id=button></div>
+            
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

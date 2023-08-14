@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-image: linear-gradient(to right,rgb(240, 95, 184),rgb(225, 104, 23), yellow,orange);
+    }
+    #container{
+        background-color: aliceblue;
+        border:1px white solid;
+        text-align: center;
+        display: inline-block;
+        max-width: 350px;
+        width: 100%;
+        height: auto;
+        margin: 50px auto;
+        }
+        img{
+            width:300px;
+        }
+        
+        input{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        #conlogfb{
+            display: inline-flex;
+        }
+        #fb{
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;
+        }
+        #conlogfb,#logfb{
+            display: inline-flex;
+            background-color: #0095f6;
+        }
+        #logfb{
+            margin-top: 5px;
+            color:blue;
+        }
+        p{
+            margin-top: 5px;
+            color: white;
+        }
+        .or{
+	display: flex;
+	align-items: center;
+	height: 15px;
+	margin: 15px 0 20px;
+    color: black;
+}
+
+.line{
+    margin: 50px;
+	width: 195px;
+	height: 0px;
+	border: 1px solid black;
+}
+button{
+    margin-top: 5px;
+    color: white;
+    background-color: #0095f6;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius:7px;
+    border-bottom-right-radius:7px;
+    padding: 5px;
+    width: 250px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+</style>
+<body><center>
+<div id="container">
+    <img src="./insta.png" alt="">
+    <p style="color:#9d8e8e;font-size:24px;">Sign up to see photo and videos  from your friends.</p>
+    <div id="conlogfb"><div id="logfb"><img src="./fb.png" alt=""id="fb">&nbsp;&nbsp;&nbsp;
+        <p>Log in with facebook</p></button></div></div>
+        <div class="or">
+            <div class="line"></div>
+            <p class="or">OR</p>
+            <div class="line"></div>
+        </div>
+    <input type="text"placeholder="Mobile Number or Email"><br>
+    <input type="text"placeholder="Full Name"><br>
+    <input type="text"placeholder="UserName"><br>
+    <input type="text"placeholder="Password"><br>
+    <p style="color:#8e8eab;">People who use our service  may have uploaded your contact information to instgram.
+        <a href="#">Learn More</a></p> 
+    <p style="color:#8e8eab;">By signing up,you agree to our<a href="#">Terms,</a>
+    <a href="#">Privacy</a><a href="#"></a>and<a href="#">Cookies Policy</a></p>
+    
+<button>Sign up</button>
+</div></center>
+
+</body>
+</html>
